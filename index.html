@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<script src="js/jquery.gForms.js"></script>
+	<link rel="stylesheet" href="css/layout.css" type="text/css"> 
+	<link rel="stylesheet" href="css/font-awesome.css" type="text/css">   
+	<link rel="stylesheet" href="css/jquery.gForms.css" type="text/css">  
+</head>
+<body>
+
+<div class="wrapper">
+		<!-- <header id="header" class="header">
+			<div class="container">
+				<div class="logo">
+					<h1>Logo</h1>
+				</div>
+				<nav id="navigation" class="navigation">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">demo link 1</a></li>
+						<li><a href="#">demo link 2</a>
+							<ul>
+								<li><a href="#">demo sub link 1</a></li>
+								<li><a href="#">demo sub link 2</a></li>
+								<li><a href="#">demo sub link 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">demo link 3</a></li>
+						<li><a href="#">demo link 4</a></li>
+						<li><a href="#">demo link 5</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="clear"></div>
+		</header> -->
+		<div class="main-content">
+			<div class="container"> 
+				<div class="login-form">
+					<form method="post" id="loginForm" action="">
+						<div class="fields">
+							<label for="username">Enter your Mobile or Email</label>
+							<input type="text" name="username"   tabindex="0" id="username" class="input">
+							<span class="hr"></span>
+						</div> 
+						
+						<div class="fields">
+							<label for="password">Password</label>
+							<input type="text" name="password"   tabindex="1" id="password" class="input">
+							<span class="hr"></span>
+						</div> 
+					</form> 
+				</div>
+			</div>
+		</div>
+		<footer id="footer" class="footer"><center>copyright &copy 2016 All Rights Reserved</center></footer>
+	</div>
+  <script type="text/javascript" >
+	$(document).ready( function() {
+	$('#loginForm').gForms({
+		themeColor: '#f00',
+		parent: '.fields'
+	});
+	
+	
+	});
+</script> 
+<!-- <script type="text/javascript" >
+	$(document).ready( function() {
+		$('#navigation').gmobileMenu({ 
+			backGround	: '#bada55',
+			breakPoint	: 600,
+		});
+	});
+</script> -->
+</body>
+</html>
